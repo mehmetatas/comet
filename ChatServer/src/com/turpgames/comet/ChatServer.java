@@ -94,6 +94,7 @@ public class ChatServer extends HttpServlet implements CometProcessor {
 			}
 		}
 
+		@Override
 		public void run() {
 			while (running) {
 				if (messages.size() == 0) {
